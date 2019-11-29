@@ -1,0 +1,81 @@
+
+
+!pip install python-chess
+
+
+import chess
+board = chess.Board()
+# movimento = chess.Move(8, 16, 'B')
+# board.push(movimento)
+# board
+
+
+​
+
+import chess
+​
+class Piece:
+    def __init__(self, piece, board):
+        self.piece = [piece]
+        self.board = board
+
+    def temPeca(self):
+        return self.board.piece_at(self.dest)
+
+    def move(self):
+        for i in sef.piece:
+            aux = self.board.copy()
+
+        mov = chess.Move(self.ini, self.dest)
+        if(mov in self.board.legal_moves):
+            self.board.push(mov)
+
+    def set_ini(self, ini):
+        self.ini = ini
+
+    def set_dest(self, dest):
+        self.dest = dest
+
+    def get_ini(self):
+        return self.ini
+
+    def atualizaBoard(self, board):
+        self.board = board
+
+
+class Jogo:
+    def __init__(self):
+        self.vet = []
+        self.board = chess.Board()
+        for a in range(16):
+            b = a + 48
+            self.vet.append(Piece(self.board.piece_at(a), self.board))
+            self.vet.append(Piece(self.board.piece_at(b), self.board))
+            self.vet[a].set_ini(a)
+            self.vet[a+1].set_ini(b)
+        self.aux = []
+
+    def movimenta(self, ini, dest):
+        self.aux = self.board.copy()
+​
+        for i in self.vet:
+            if(int(i.get_ini()) == int(ini)):
+                atual = i
+                break
+
+        atual.set_dest(dest)
+        if(atual.temPeca()):
+            capturada = atual.temPeca()
+            for i in capturada:
+                if i not in atual.piece:
+                    atual.piece.append(i)
+        else:
+            atual.move()
+
+    def get_board(self):
+        return self.board
+​
+​
+a = Jogo()
+a.movimenta(8, 24)
+a.get_board()
