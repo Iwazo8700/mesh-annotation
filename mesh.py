@@ -52,7 +52,7 @@ class Mesh_init:
                 "Note": self.vet[i][10],
             },],commit=True)
         mesh_read.close()
-    def procura(self, palavra, **kwargs):
+    def search(self, palavra, **kwargs):
         name = kwargs.get("name")
         synonym = kwargs.get("synonym")
         previndexing = kwargs.get("previous_indexing")
