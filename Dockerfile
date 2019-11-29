@@ -48,6 +48,6 @@ RUN unzip -qq solr-8.2.0.zip && rm solr-8.2.0.zip
 COPY mesh.py /Downloads/mesh-docker/mesh.py
 COPY c2020.bin /Downloads/mesh-docker/c2020.bin
 
-CMD ./solr-8.2.0/bin/solr start -c
-CMD ./solr-8.2.0/bin/solr create -c mesh -p 8983
-CMD python3 Downloads/mesh.py
+RUN ./solr-8.2.0/bin/solr start -c
+RUN ./solr-8.2.0/bin/solr create -c mesh -p 8983
+RUN python3 Downloads/mesh.py
