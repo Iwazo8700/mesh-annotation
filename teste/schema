@@ -1,0 +1,9 @@
+
+<field name="DescriptorUI" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+<field name="DescriptorName" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+<field name="DateCreated" type="pdate" indexed="false" stored="true" required="false" multiValued="false" />
+<field name="conceptUI" type="string" indexed="true" stored="true" required="false" multiValued="true" />
+
+<copyField source="DescriptorUI" dest="_text_"/>
+<copyField source="DescriptorName" dest="_text_"/>
+<copyField source="DateCreated" dest="_text_"/>
