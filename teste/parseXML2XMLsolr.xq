@@ -1,4 +1,4 @@
-let $mesh := doc("/home/enzo/Documentos/Docker/mesh-annotation/teste/desc2020.xml")
+let $mesh := doc("/home/enzo/Documentos/Docker/desc2020.xml")
 
 return
 <add>
@@ -6,14 +6,23 @@ return
   for $d in ($mesh//DescriptorRecord)
   return
   <doc>
-     <field name="id">{$d/DescriptorUI/text()}</field>
-     <field name="descriptor_name">{$d/DescriptorName/String/text()}</field>
-     <field name="date_created">{$d/DateCreated/Year/text()}-{$d/DateCreated/Month/text()}-{$d/DateCreated/Day/text()}</field>
+     <field name="DescriptorUI">{$d/DescriptorUI/text()}</field>
+     <field name="DescriptorName">{$d/DescriptorName/String/text()}</field>
+     <field name="DateCreated">{$d/DateCreated/Year/text()}-{$d/DateCreated/Month/text()}-{$d/DateCreated/Day/text()}</field>
      {
        for $c in ($d//ConceptUI)
        return
-       <field name="conceptUI">{$c/text()}</field>
+       <field name="ConceptUI">{$c/text()}</field>
      }
+     <field name="Annotation">{$d//Annotation/text()}</field>
+     <field name="ScopeNote">{$d//ScopeNote/text()}</field>
+     {
+       for $pa in ($d//PharmacologicalAction) 
+         return 
+         <field name="PharmacologicalAction">{$pa/DescriptorName/String/text()}</field>
+     }
+     
+     
   </doc>
 }
 </add>

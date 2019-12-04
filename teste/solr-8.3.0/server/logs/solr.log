@@ -1,139 +1,68 @@
-2019-12-04 12:51:48.613 INFO  (main) [   ] o.e.j.u.log Logging initialized @6864ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-12-04 12:51:49.517 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty.xml
-2019-12-04 12:51:49.770 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2019-12-04 12:51:49.770 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty-http.xml
-2019-12-04 12:51:49.806 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
-2019-12-04 12:51:49.888 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/contexts/] at interval 0
-2019-12-04 12:51:52.896 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-12-04 12:51:52.945 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-12-04 12:51:52.945 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-12-04 12:51:52.953 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2019-12-04 12:51:53.519 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-12-04 12:51:53.584 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
-2019-12-04 12:51:53.584 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-12-04 12:51:53.584 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0
-2019-12-04 12:51:53.586 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-12-04T12:51:53.586Z
-2019-12-04 12:51:53.781 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr
-2019-12-04 12:51:53.824 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/solr.xml
-2019-12-04 12:51:54.483 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
-2019-12-04 12:51:56.032 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2019-12-04 12:51:57.424 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
-2019-12-04 12:51:57.424 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
-2019-12-04 12:51:58.041 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
-2019-12-04 12:51:58.041 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
-2019-12-04 12:51:59.076 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
-2019-12-04 12:51:59.095 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2019-12-04 12:51:59.578 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-04 12:51:59.583 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-04 12:51:59.608 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-04 12:51:59.949 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr
-2019-12-04 12:51:59.950 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mesh]
-2019-12-04 12:52:00.199 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@15bbf42f{/solr,file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp}
-2019-12-04 12:52:00.250 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
-2019-12-04 12:52:00.250 INFO  (main) [   ] o.e.j.s.Server Started @18506ms
-2019-12-04 12:52:00.294 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/dist]
-2019-12-04 12:52:03.906 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
-2019-12-04 12:52:05.003 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
-2019-12-04 12:52:08.304 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2019-12-04 12:52:08.460 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh, trusted=true
-2019-12-04 12:52:08.678 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
-2019-12-04 12:52:08.744 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/data/]
-2019-12-04 12:52:09.474 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
-2019-12-04 12:52:12.407 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2019-12-04 12:52:12.407 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2019-12-04 12:52:12.429 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2019-12-04 12:52:12.429 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2019-12-04 12:52:14.975 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@4948c31e[mesh] main]
-2019-12-04 12:52:15.080 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf
-2019-12-04 12:52:15.712 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2019-12-04 12:52:15.888 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
-2019-12-04 12:52:15.963 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
-2019-12-04 12:52:16.073 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1651993672231682048
-2019-12-04 12:52:16.082 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4948c31e[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-12-04 12:52:16.082 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-12-04 12:52:16.082 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2019-12-04 12:52:16.112 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@4948c31e[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-12-04 12:52:50.345 INFO  (qtp153245266-17) [   x:mesh] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf/managed-schema
-2019-12-04 12:52:50.664 INFO  (qtp153245266-17) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={}{} 0 926
-2019-12-04 12:52:50.676 ERROR (qtp153245266-17) [   x:mesh] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: [doc=D000001] missing required field: DescriptorName
-	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:245)
-	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:109)
-	at org.apache.solr.update.DirectUpdateHandler2.updateDocOrDocValues(DirectUpdateHandler2.java:969)
-	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:344)
-	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:291)
-	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:238)
-	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:76)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.NestedUpdateProcessorFactory$NestedUpdateProcessor.processAdd(NestedUpdateProcessorFactory.java:79)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:259)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.doVersionAdd(DistributedUpdateProcessor.java:489)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.lambda$versionAdd$0(DistributedUpdateProcessor.java:339)
-	at org.apache.solr.update.VersionBucket.runWithLock(VersionBucket.java:50)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:339)
-	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:225)
-	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:475)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:75)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:118)
-	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:55)
-	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:92)
-	at org.apache.solr.handler.loader.XMLLoader.processUpdate(XMLLoader.java:261)
-	at org.apache.solr.handler.loader.XMLLoader.load(XMLLoader.java:188)
-	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
-	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:68)
-	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:198)
-	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2576)
-	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:803)
-	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:582)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:424)
-	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:351)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1711)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1347)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1678)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1249)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:152)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
-	at org.eclipse.jetty.server.Server.handle(Server.java:505)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:370)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:267)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
-	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:781)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:917)
-	at java.lang.Thread.run(Thread.java:748)
-
-2019-12-04 12:52:52.024 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1651993709929037824,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-2019-12-04 12:52:52.024 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 No uncommitted changes. Skipping IW.commit.
-2019-12-04 12:52:52.026 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@2fdeae63[mesh] main]
-2019-12-04 12:52:52.029 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 end_commit_flush
-2019-12-04 12:52:52.032 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2fdeae63[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-12-04 12:52:52.032 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2019-12-04 12:52:52.090 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@2fdeae63[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
-2019-12-04 12:52:52.097 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={commit=true}{commit=} 0 96
+2019-12-04 14:47:21.583 INFO  (main) [   ] o.e.j.u.log Logging initialized @1918ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-12-04 14:47:21.875 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty.xml
+2019-12-04 14:47:22.020 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-12-04 14:47:22.021 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty-http.xml
+2019-12-04 14:47:22.032 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
+2019-12-04 14:47:22.088 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/contexts/] at interval 0
+2019-12-04 14:47:22.675 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-12-04 14:47:22.697 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-12-04 14:47:22.697 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-12-04 14:47:22.703 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-12-04 14:47:22.900 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-12-04 14:47:22.920 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2019-12-04 14:47:22.921 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-12-04 14:47:22.921 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0
+2019-12-04 14:47:22.922 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-12-04T14:47:22.922Z
+2019-12-04 14:47:22.975 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr
+2019-12-04 14:47:22.997 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/solr.xml
+2019-12-04 14:47:23.178 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3, but no JMX reporters were configured - adding default JMX reporter.
+2019-12-04 14:47:24.041 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2019-12-04 14:47:24.582 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
+2019-12-04 14:47:24.583 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2f40e5db[provider=null,keyStore=null,trustStore=null]
+2019-12-04 14:47:24.846 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
+2019-12-04 14:47:24.847 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@78365cfa[provider=null,keyStore=null,trustStore=null]
+2019-12-04 14:47:25.201 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2019-12-04 14:47:25.205 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2019-12-04 14:47:25.359 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-12-04 14:47:25.360 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-12-04 14:47:25.373 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-12-04 14:47:25.458 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr
+2019-12-04 14:47:25.459 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [mesh]
+2019-12-04 14:47:25.668 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@15bbf42f{/solr,file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp/,AVAILABLE}{/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr-webapp/webapp}
+2019-12-04 14:47:25.676 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrResourceLoader [mesh] Added 61 libs to classloader, from paths: [/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/clustering/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/extraction/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/langid/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/contrib/velocity/lib, /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/dist]
+2019-12-04 14:47:25.683 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@fbd1f6{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2019-12-04 14:47:25.686 INFO  (main) [   ] o.e.j.s.Server Started @6022ms
+2019-12-04 14:47:26.195 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.3.0
+2019-12-04 14:47:26.542 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema [mesh] Schema name=default-config
+2019-12-04 14:47:27.663 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2019-12-04 14:47:27.731 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.CoreContainer Creating SolrCore 'mesh' using configuration from instancedir /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh, trusted=true
+2019-12-04 14:47:27.781 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mesh' (registry 'solr.core.mesh') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3d299e3
+2019-12-04 14:47:27.811 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.c.SolrCore [[mesh] ] Opening new SolrCore at [/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh], dataDir=[/home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/data/]
+2019-12-04 14:47:27.911 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2019-12-04 14:47:28.933 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2019-12-04 14:47:28.933 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2019-12-04 14:47:28.962 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2019-12-04 14:47:28.962 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2019-12-04 14:47:29.117 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@3458d53b[mesh] main]
+2019-12-04 14:47:29.136 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/solr/mesh/conf
+2019-12-04 14:47:29.178 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2019-12-04 14:47:29.193 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2019-12-04 14:47:29.221 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2019-12-04 14:47:29.228 INFO  (coreLoadExecutor-9-thread-1) [   x:mesh] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1652000921200099328
+2019-12-04 14:47:29.236 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3458d53b[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-12-04 14:47:29.236 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-12-04 14:47:29.236 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2019-12-04 14:47:29.266 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@3458d53b[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2019-12-04 14:47:59.750 INFO  (qtp153245266-17) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={}{add=[340a1943-4436-40cc-b698-d36510dfef94 (1652000941936738304), c2e807ab-40db-45e3-a00a-bf87a4012d48 (1652000942100316160), caebeb2d-a6bb-4e1d-b66e-aecb07ca4233 (1652000942117093376), 45de3d7f-2914-4865-b6f1-108d406ca4de (1652000942121287680), c87e3022-8e4b-4626-8071-89f5ebed13eb (1652000942125481984), 412ea16c-c247-4e90-8e05-edb2cf5b4992 (1652000942141210624), 18017a47-c95f-486e-bc4a-5ef13ca50bd4 (1652000942145404928), de518179-ad39-4403-b39a-ab9fb75f32f9 (1652000942154842112), 05485c18-e752-49b7-a7f1-6dcd83c086be (1652000942166376448), 2538e766-fcaf-4dfd-86ed-79954780931e (1652000942171619328), ... (29640 adds)]} 0 10885
+2019-12-04 14:47:59.787 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1652000953242484736,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2019-12-04 14:47:59.787 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@7bad3050 commitCommandVersion:1652000953242484736
+2019-12-04 14:48:05.590 INFO  (qtp153245266-13) [   x:mesh] o.a.s.s.SolrIndexSearcher Opening [Searcher@27c87844[mesh] main]
+2019-12-04 14:48:05.597 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@27c87844[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C29640:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-72-generic, timestamp=1575470883559}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-12-04 14:48:05.597 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2019-12-04 14:48:05.603 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2019-12-04 14:48:05.645 INFO  (searcherExecutor-10-thread-1-processing-x:mesh) [   x:mesh] o.a.s.c.SolrCore [mesh] Registered new searcher Searcher@27c87844[mesh] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(8.3.0):C29640:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_221, java.vm.version=25.221-b11, lucene.version=8.3.0, os.arch=amd64, java.runtime.version=1.8.0_221-b11, source=flush, os.version=4.15.0-72-generic, timestamp=1575470883559}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2019-12-04 14:48:05.657 INFO  (qtp153245266-13) [   x:mesh] o.a.s.u.p.LogUpdateProcessorFactory [mesh]  webapp=/solr path=/update params={commit=true}{commit=} 0 5872
+2019-12-04 14:48:22.161 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=*&wt=json} hits=29640 status=0 QTime=351
+2019-12-04 14:48:56.952 INFO  (qtp153245266-18) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=D000011&wt=json} hits=1 status=0 QTime=75
+2019-12-04 14:49:05.189 INFO  (qtp153245266-16) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=D000100&wt=json} hits=1 status=0 QTime=1
+2019-12-04 14:50:20.994 INFO  (qtp153245266-19) [   x:mesh] o.a.s.c.S.Request [mesh]  webapp=/solr path=/select params={q=D066331&wt=json} hits=1 status=0 QTime=1
