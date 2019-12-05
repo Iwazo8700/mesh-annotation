@@ -1,4 +1,4 @@
-let $mesh := doc("/home/enzo/Documentos/Docker/desc2020.xml")
+let $mesh := doc("/home/ec2018-fra/ra215394/Documents/desc2020.xml")
 
 return
 <add>
@@ -7,21 +7,35 @@ return
   return
   <doc>
      <field name="DescriptorUI">{$d/DescriptorUI/text()}</field>
-     <field name="DescriptorName">{$d/DescriptorName/String/text()}</field>
-     <field name="DateCreated">{$d/DateCreated/Year/text()}-{$d/DateCreated/Month/text()}-{$d/DateCreated/Day/text()}</field>
+     
+     {
+       for $cn in ($d//ConceptName)
+       return
+       <field name="ConceptName">{$cn/String/text()}</field>
+     }
+     
      {
        for $c in ($d//ConceptUI)
        return
        <field name="ConceptUI">{$c/text()}</field>
      }
-     <field name="Annotation">{$d//Annotation/text()}</field>
-     <field name="ScopeNote">{$d//ScopeNote/text()}</field>
+     
      {
-       for $pa in ($d//PharmacologicalAction) 
-         return 
-         <field name="PharmacologicalAction">{$pa/DescriptorName/String/text()}</field>
+       for $tl in ($d//TermList/Term)
+         return
+         <field name="EntryTerm">{$tl//String/text()}</field>
      }
      
+     {
+       for $pi in ($d//PreviousIndexing)
+       return
+       <field name="PreviousIndexing">{$pi/text()}</field>
+     }
+     
+     <field name="Annotation">{$d//Annotation/text()}</field>
+     
+     <field name="ScopeNote">{$d//ScopeNote/text()}</field>
+     <field name="DateCreated">{$d/DateCreated/Year/text()}-{$d/DateCreated/Month/text()}-{$d/DateCreated/Day/text()}</field>
      
   </doc>
 }

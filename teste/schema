@@ -1,16 +1,18 @@
-
 <field name="DescriptorUI" type="string" indexed="true" stored="true" required="true" multiValued="false" />
-<field name="DescriptorName" type="string" indexed="true" stored="true" required="true" multiValued="false" />
-<field name="DateCreated" type="pdate" indexed="false" stored="true" required="false" multiValued="false" />
-<field name="ConceptUI" type="string" indexed="true" stored="true" required="false" multiValued="true" />
+<field name="ConceptName" type="string" indexed="true" stored="true" required="true" multiValued="true" />
+<field name="ConceptUI" type="string" indexed="true" stored="true" required="true" multiValued="true" />
+<field name="EntryTerm" type="string" indexed="true" stored="true" required="false" multiValued="true" />
+<field name="PreviousIndexing" type="string" indexed="true" stored="true" required="false" multiValued="true" />
 <field name="Annotation" type="string" indexed="true" stored="true" required="false" multiValued="false" />
 <field name="ScopeNote" type="string" indexed="true" stored="true" required="false" multiValued="false" />
-<field name="PharmacologicalAction" type="string" indexed="false" stored="true" required="false" multiValued="true" />
+<field name="DateCreated" type="pdate" indexed="false" stored="true" required="false" multiValued="false" />
+
 
 <copyField source="DescriptorUI" dest="_text_"/>
-<copyField source="DescriptorName" dest="_text_"/>
-<copyField source="DateCreated" dest="_text_"/>
+<copyField source="ConceptName" dest="_text_"/>
 <copyField source="ConceptUI" dest="_text_"/>
+<copyField source="EntryTerm" dest="_text_"/>
+<copyField source="PreviousIndexing" dest="_text_"/>
 <copyField source="Annotation" dest="_text_"/>
 <copyField source="ScopeNote" dest="_text_"/>
-<copyField source="PharmacologicalAction" dest="_text_"/>
+<copyField source="DateCreated" dest="_text_"/>
