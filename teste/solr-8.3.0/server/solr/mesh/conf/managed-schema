@@ -108,8 +108,20 @@
 
          WARNING: The _text_ catch-all field will significantly increase your index size.
          If you don't need it, consider removing it and the corresponding copyField directive.
+
     -->
 
+    <fieldType name="auto_text" class="solr.TextField" positionIncrementGap="100">
+        <analyzer type="index">
+                <tokenizer class="solr.KeywordTokenizerFactory" />
+                <filter class="solr.LowerCaseFilterFactory" />
+                <!-- <filter class="solr.EdgeNGramFilterFactory" minGramSize="2" maxGramSize="15" /> -->
+        </analyzer>
+        <analyzer type="query">
+                <tokenizer class="solr.KeywordTokenizerFactory" />
+                <filter class="solr.LowerCaseFilterFactory" />
+        </analyzer>
+    </fieldType>
     <field name="id" type="string" indexed="true" stored="true" required="true" multiValued="false" />
     <!-- docValues are enabled by default for long type so we don't need to index the version field  -->
     <field name="_version_" type="plong" indexed="false" stored="false"/>
@@ -121,23 +133,15 @@
     <field name="_nest_path_" type="_nest_path_" /><fieldType name="_nest_path_" class="solr.NestPathField" />
 
     <field name="_text_" type="text_general" indexed="true" stored="false" multiValued="true"/>
-    <field name="DescriptorUI" type="string" indexed="true" stored="true" required="true" multiValued="false" >
-    <analyzer type="index">
-             <tokenizer class="solr.KeywordTokenizerFactory" />
-             <filter class="solr.LowerCaseFilterFactory" />
-             <filter class="solr.EdgeNGramFilterFactory" minGramSize="2" maxGramSize="15" />
-     </analyzer>
-     <analyzer type="query">
-             <tokenizer class="solr.KeywordTokenizerFactory" />
-             <filter class="solr.LowerCaseFilterFactory" />
-     </analyzer>
-    </fieldType>
-    <field name="ConceptName" type="string" indexed="true" stored="true" required="true" multiValued="true" />
+
+
+    <field name="DescriptorUI" type="string" indexed="true" stored="true" required="true" multiValued="false" />
+    <field name="ConceptName" type="auto_text" indexed="true" stored="true" required="true" multiValued="true" />
     <field name="ConceptUI" type="string" indexed="true" stored="true" required="true" multiValued="true" />
-    <field name="EntryTerm" type="string" indexed="true" stored="true" required="false" multiValued="true" />
-    <field name="PreviousIndexing" type="string" indexed="true" stored="true" required="false" multiValued="true" />
-    <field name="Annotation" type="string" indexed="true" stored="true" required="false" multiValued="false" />
-    <field name="ScopeNote" type="string" indexed="true" stored="true" required="false" multiValued="false" />
+    <field name="EntryTerm" type="auto_text" indexed="true" stored="true" required="false" multiValued="true" />
+    <field name="PreviousIndexing" type="auto_text" indexed="true" stored="true" required="false" multiValued="true" />
+    <field name="Annotation" type="auto_text" indexed="true" stored="true" required="false" multiValued="false" />
+    <field name="ScopeNote" type="auto_text" indexed="true" stored="true" required="false" multiValued="false" />
     <field name="DateCreated" type="pdate" indexed="false" stored="true" required="false" multiValued="false" />
 
 
