@@ -1,19 +1,19 @@
 Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
-Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory. (error = 12)
-Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory. (error = 12)
 Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
-2019-12-05 16:46:45.949 INFO  (main) [   ] o.e.j.u.log Logging initialized @1227ms to org.eclipse.jetty.util.log.Slf4jLog
-2019-12-05 16:46:46.035 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/ec2018-fra/ra215394/Documents/mesh-annotation/teste/solr-8.3.0/server/etc/jetty.xml
-2019-12-05 16:46:46.083 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
-2019-12-05 16:46:46.083 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/ec2018-fra/ra215394/Documents/mesh-annotation/teste/solr-8.3.0/server/etc/jetty-http.xml
-2019-12-05 16:46:46.088 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_201-b09
-2019-12-05 16:46:46.124 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/ec2018-fra/ra215394/Documents/mesh-annotation/teste/solr-8.3.0/server/contexts/] at interval 0
-2019-12-05 16:46:46.358 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2019-12-05 16:46:46.367 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2019-12-05 16:46:46.367 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2019-12-05 16:46:46.369 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2019-12-05 16:46:46.428 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2019-12-05 16:46:46.432 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
-2019-12-05 16:46:46.432 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2019-12-05 16:46:46.432 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/ec2018-fra/ra215394/Documents/mesh-annotation/teste/solr-8.3.0
-2019-12-05 16:46:46.432 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-12-05T16:46:46.432Z
+Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+Java HotSpot(TM) 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+2019-12-05 18:42:56.858 INFO  (main) [   ] o.e.j.u.log Logging initialized @2653ms to org.eclipse.jetty.util.log.Slf4jLog
+2019-12-05 18:42:57.231 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.rewrite.handler.RedirectRegexRule.setReplacement(java.lang.String) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty.xml
+2019-12-05 18:42:57.431 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2019-12-05 18:42:57.431 WARN  (main) [   ] o.e.j.x.XmlConfiguration Deprecated method public void org.eclipse.jetty.server.ServerConnector.setSoLingerTime(int) in file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/etc/jetty-http.xml
+2019-12-05 18:42:57.442 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.19.v20190610; built: 2019-06-10T16:30:51.723Z; git: afcf563148970e98786327af5e07c261fda175d3; jvm 1.8.0_221-b11
+2019-12-05 18:42:57.513 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0/server/contexts/] at interval 0
+2019-12-05 18:42:58.363 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2019-12-05 18:42:58.390 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2019-12-05 18:42:58.402 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2019-12-05 18:42:58.414 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2019-12-05 18:42:58.638 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2019-12-05 18:42:58.665 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.3.0
+2019-12-05 18:42:58.666 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2019-12-05 18:42:58.666 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/enzo/Documentos/Docker/mesh-annotation/teste/solr-8.3.0
+2019-12-05 18:42:58.666 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2019-12-05T18:42:58.666Z
