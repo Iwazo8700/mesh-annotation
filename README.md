@@ -4,9 +4,7 @@ Esse guia mostra como fazer recuperação de informação usando o MESH(Medical 
 
 ## Guia
 ### Instalação do Solr
-O link a seguir possui o .zip do solr
-
-```http://ftp.unicamp.br/pub/apache/lucene/solr/8.3.0/solr-8.3.0.zip -q```
+Instale o [solr.zip](http://ftp.unicamp.br/pub/apache/lucene/solr/8.3.0/solr-8.3.0.zip), e extraia-o
 
 ### Iniciando o solr
 Para iniciar o solr precisamos estar dentro do diretorio "solr-8.3.0", dele digitamos
@@ -37,11 +35,14 @@ Este comando cria um core chamado mesh na porta 8983 do computador, então para 
 
 Com o core criado é necessário editar a "inteligencia" da busca, ela ficará localizada seguindo o seguinte caminho: ```server/solr/mesh/conf``` o nome do arquivo é ```managed-schema```. Neste arquivo declararemos os tipos de "fields" que serão usados nos textos, assim como seus formatos.
 
+O banco de dados do mesh ficara no diretório ```example/exampledocs```.
+
 ### Banco de dados
 Para adicionarmos novos dados ao nosso core precisamos deixar esses dados num formato xml especifico, para isso primeiramente pegaremos os dados do mesh.
 #### Instalando o Mesh
-O banco de dados do mesh que iremos usar estará no formato XML. Entrando no link a seguir faca o download no desc2020.zip
-```ftp://nlmpubs.nlm.nih.gov/online/mesh/MESH_FILES/xmlmesh/```
+O banco de dados do mesh que iremos usar estará no formato XML. Entrando no link a seguir faca o download no [desc2020.zip](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/desc2020.zip)
+
+#### Edição do Mesh
 Com a base instalada vamos editar esse xml para um xml que possa ser lido pelo solr e ser interpretado como informação, o jeito mais fácil que encontrei para fazer isso foi usando xpath e xquery.
 O formato do arquivo que devemos chegar é 
 ```<add>
@@ -54,7 +55,17 @@ O formato do arquivo que devemos chegar é
 ```
 onde o boost é opcional.
 
-Para tranformar o mesh em um xml válido usei o pragrama [parseXML2XMLsolr](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/parseXML2XMLsolr.xq)
+Para tranformar o mesh em um xml válido usei o pragrama [parseXML2XMLsolr.xq](https://github.com/Iwazo8700/mesh-annotation/blob/master/buid-solr/parseXML2XMLsolr.xq), nele transformamos os seguintes dados em fields:
+* DescriptorUI
+* ConceptName
+* ConceptUI
+* EntryTerm
+* PreviousIndexing
+* Annotation
+* ScopeNote
+* DateCreated
+#### Xpath e Xquery
+
 
 
 ### Managed-Schema
@@ -62,7 +73,7 @@ Nesse arquivo temos varios tipos de classes a serem declaradas, mas para criarmo
 
 ```<field name=_name_ type=_type_ indexed=_boolean_ stored=_boolean_ required=_boolean_ multiValued=_boolean_ />```
 
-Seguindo esse exemplo criaremos um campo de nome DescriptorUI, do tipo string, indexado, guardado, necassário e simples.
+Seguindo esse exemplo criaremos um campo de nome DescriptorUI, do tipo string, indexado, guardado, necassário e simples:
 ```<field name="DescriptorUI" type="string" indexed="true" stored="true" required="true" multiValued="false" />```
 
 
