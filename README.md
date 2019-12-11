@@ -127,6 +127,27 @@ Para aplicar esse novo tipo colocaremos seu nome no lugar do "type" quando decla
 ```
 que essa field já aplicará o novo tipo que criamos, ainda  preciso dar um copyField para adicionarmos essa field à busca.
 
+### Adicionando tudo ao solr
+
+Com o banco de dados e o managed-schema prontos podemos adicioná-los ao solr.
+Ja iniciamos o solr com
+
+```bin/solr start```
+
+Ja criamos o core com
+
+```bin/solr create -c mesh -p 8983```
+
+Ja editamos o managed-schema no caminho dado por ```server/solr/mesh/conf```
+Então deixamos nosso banco de dados em ```example/exampledocs```, como dito antes.
+Disso tudo temos tudo pronto, para acessar o dicionário basta acessar esse link:
+```http://localhost:8983/solr/mesh/select?q=*&wt=json```
+Ele acessa a porta local 8983 do comútador, a busca será dada pela variável "q" e o formato de retorno pela variável "wt"
+
+### Busca
+
+Como dito antes a busca será feita na variável "q" do link, contudo existem várias formas de fazê-las
+
 
 
 
