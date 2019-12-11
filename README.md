@@ -121,7 +121,9 @@ Nesse exmplo criamos um tipo chamado auto_text, definimos entao a classe dela co
 
 Para aplicar esse novo tipo colocaremos seu nome no lugar do "type" quando declaramos a field, então para colocarmos esse novo tipo na ScopeNote basta fazer isso:
 
-```<field name="ScopeNote" type="auto_text" indexed="true" stored="true" required="false" multiValued="false" />
+```
+<field name="ScopeNote" type="auto_text" indexed="true" stored="true" required="false" multiValued="false" />
+
 ```
 que essa field já aplicará o novo tipo que criamos, ainda  preciso dar um copyField para adicionarmos essa field à busca.
 
