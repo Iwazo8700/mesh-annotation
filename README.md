@@ -146,7 +146,51 @@ Ele acessa a porta local 8983 do comútador, a busca será dada pela variável "
 
 ### Busca
 
-Como dito antes a busca será feita na variável "q" do link, contudo existem várias formas de fazê-las
+Como dito antes a busca será feita pela variàvel "q", então para se buscar um termo basta colocar ele deopis do "q=", se a busca for um nome composto basta fazer isso ```q="nome composto"```, a sintaxe de ```q=*``` serve para listar os 10 primeiros termos. Caso se deseje especificar uma field em que se deseje procurar usamos a seguinte sintaxe ```q=ConceptName:("Myocardial%20Infarction")```
+
+### Resumo
+
+De forma rápida, caso já se tenha tudo pronto a lista de comandos será essa:
+
+* Entramos no solr e vamos até o ```example/exampledocs```
+* iniciar o solr:
+
+```../../bin/solr start```
+
+* caso já se tenha criado uma core antes é preciso deleta-la, para isso usamos esse comando:
+
+```../../bin/solr delete -c mesh -p 8983```
+
+* criar o mesh:
+
+```../../bin/solr create -c mesh -p 8983```
+
+* Editamos o managed-schema (se for fazer vários teste vale a pena copiar o managed-schema em uma pasta fora do mesh e depois só copiar ele de novo), no diretório ```server/solr/mesh/conf``` partindo do ```solr-8.3.0```
+
+* Reiniciamos o mesh com:
+
+```../../bin/solr restart```
+
+* Adicionamos o banco de dados no solr(XMLsolr.xml é o nome do meu banco de dados editado):
+
+```java -Dc=mesh -jar post.jar XMLsolr.xml```
+
+* Acessamos a porta local e verificamos se tudo foi adicionado com:
+
+```http://localhost:8983/solr/mesh/select?q=*&wt=json```
+
+* Fazemos uma busca como:
+
+```http://localhost:8983/solr/mesh/select?q="Myocardial%20Infarction"&wt=json```
+
+* Busca em um campo especifico:
+
+```http://localhost:8983/solr/mesh/select?q=ConceptName:("Myocardial%20Infarction")&wt=json```
+
+Caso se deseje editar o managed-schema ou o banco de dados é preciso deletar o núcleo atual, no caso o mesh já criado, caso nãose faça isso pode-se ou gerar um erro ou adicionar novamente o banco de dados, deixando seu mesh com dois ou ais do mesmo termo
+
+
+
 
 
 
