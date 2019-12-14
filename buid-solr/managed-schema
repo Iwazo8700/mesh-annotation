@@ -114,6 +114,7 @@
     <fieldType name="auto_text" class="solr.TextField" positionIncrementGap="100">
         <analyzer type="index">
                 <tokenizer class="solr.KeywordTokenizerFactory" />
+		<filter class="solr.StopFilterFactory" ignoreCase="true" words="stopwords.txt" />
 		<filter class="solr.PorterStemFilterFactory"/>
                 <filter class="solr.LowerCaseFilterFactory" />
                 <!-- <filter class="solr.EdgeNGramFilterFactory" minGramSize="2" maxGramSize="15" /> -->
