@@ -187,3 +187,5 @@ De forma rápida, caso já se tenha tudo pronto a lista de comandos será essa:
 ```http://localhost:8983/solr/mesh/select?q=ConceptName:("Myocardial%20Infarction")&wt=json```
 
 Caso se deseje editar o managed-schema ou o banco de dados é preciso deletar o núcleo atual, no caso o mesh já criado, caso não se faça isso pode-se ou gerar um erro ou adicionar novamente o banco de dados, deixando seu mesh com dois ou mais do mesmo termo.
+
+Mais informações podem ser encontradas em: ```https://lucene.apache.org/solr/guide/8_3/solr-tutorial.html```
